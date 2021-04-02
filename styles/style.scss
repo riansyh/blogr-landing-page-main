@@ -8,7 +8,7 @@ $vr-dark-bb: hsl(240, 10%, 16%);
 $vr-light-red: hsl(13, 100%, 72%);
 $vr-dark-gb: hsl(237, 17%, 21%);
 $vr-dark-db: hsl(237, 23%, 32%);
-$mobile: 375px;
+$mobile: 800px;
 
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
@@ -164,7 +164,7 @@ header {
       text-align: center;
       color: $white;
 
-      @media screen and (max-width: 375px) {
+      @media screen and (max-width: $mobile) {
         font-size: 38px;
       }
     }
