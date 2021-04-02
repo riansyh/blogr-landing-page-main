@@ -3,16 +3,11 @@ const showMenu = (name) => {
   const arrow = document.getElementById(`ar-${name}`);
 
   if (nama.classList.contains("hide")) {
-    nama.classList.remove("animate__fadeOut");
-    nama.classList.add("animate__animated");
-    nama.classList.add("animate__fadeIn");
-    nama.classList.add("animate__faster");
+    fadeIn(nama);
     arrow.classList.add("rotate");
     nama.classList.remove("hide");
   } else {
-    nama.classList.remove("animate__fadeIn");
-    nama.classList.add("animate__fadeOut");
-    nama.classList.add("animate__faster");
+    fadeOut(nama);
     setTimeout(function () {
       nama.classList.add("hide");
     }, 200);
@@ -24,16 +19,11 @@ const showNavbar = () => {
   const burger = document.getElementById("burger");
   const menu = document.getElementById("menus");
   if (menu.classList.contains("hide")) {
-    menu.classList.remove("animate__fadeOut");
+    fadeIn(menu);
     menu.classList.remove("hide");
-    menu.classList.add("animate__animated");
-    menu.classList.add("animate__fadeIn");
-    menu.classList.add("animate__faster");
     burger.style.backgroundImage = "url(images/icon-close.svg)";
   } else {
-    menu.classList.remove("animate__fadeIn");
-    menu.classList.add("animate__fadeOut");
-    menu.classList.add("animate__faster");
+    fadeOut(menu);
     setTimeout(function () {
       menu.classList.add("hide");
     }, 500);
@@ -48,7 +38,27 @@ const showNavbar = () => {
   function displayWindowSize() {
     let myWidth = window.innerWidth;
     if (myWidth > 400) {
-      document.getElementById("navbar").innerHTML = `
+      document.getElementById("navbar").innerHTML = navbarNormal;
+    } else {
+      document.getElementById("navbar").innerHTML = navbarMini;
+    }
+  }
+})();
+
+const fadeIn = (name) => {
+  name.classList.remove("animate__fadeOut");
+  name.classList.add("animate__animated");
+  name.classList.add("animate__fadeIn");
+  name.classList.add("animate__faster");
+};
+
+const fadeOut = (name) => {
+  name.classList.remove("animate__fadeIn");
+  name.classList.add("animate__fadeOut");
+  name.classList.add("animate__faster");
+};
+
+const navbarNormal = `
           <div class="left">
             <div class="logo"></div>
             <div class="navigation" id="navigation">
@@ -91,10 +101,10 @@ const showNavbar = () => {
               <li>LinkedIn</li>
             </div>
           </div>
-      `;
-    } else {
-      document.getElementById("navbar").innerHTML = `
-                <div class="left-m">
+`;
+
+const navbarMini = `
+        <div class="left-m">
             <div class="logo-mini"></div>
             <div class="burger" id="burger" onclick="showNavbar()"></div>
           </div>
@@ -135,7 +145,4 @@ const showNavbar = () => {
               <div class="button signup">Sign Up</div>
             </div>
           </div>
-      `;
-    }
-  }
-})();
+`;
