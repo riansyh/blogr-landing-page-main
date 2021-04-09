@@ -50,6 +50,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://riansyh.github.io/portfolio/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/riansyh)
-- Instagram - [@yourusername](https://www.instagram.com/rian.fbrsyh)
+- Website - [Rian Febriansyah](https://riansyh.github.io/portfolio/)
+- Frontend Mentor - [riansyh](https://www.frontendmentor.io/profile/riansyh)
+- Instagram - [@rian.fbrsyh](https://www.instagram.com/rian.fbrsyh)
