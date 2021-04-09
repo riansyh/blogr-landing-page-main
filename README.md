@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP/hub/using-bootstrap-flexbox-vanilla-js-and-animate-js-NtPvc98HI)
-- Live Site URL: [Add live site URL here](https://blogr-landing-page-main-amber.vercel.app/)
+- Solution URL: [Click Here](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP/hub/using-bootstrap-flexbox-vanilla-js-and-animate-js-NtPvc98HI)
+- Live Site URL: [Click Here](https://blogr-landing-page-main-amber.vercel.app/)
 
 ### Built with
 
